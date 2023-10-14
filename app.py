@@ -1,7 +1,7 @@
 import torch
 import datetime, os
-from diffusers import DiffusionPipeline, DPMSolverMultistepScheduler
-# from diffusers import StableDiffusionPipeline, EulerDiscreteScheduler
+from diffusers import DiffusionPipeline, DPMSolverMultistepScheduler, EulerDiscreteScheduler
+# from diffusers import StableDiffusionPipeline
 
 # Use local model
 model_id = "./Models/meinamix_meinaV9"
@@ -16,6 +16,8 @@ pipeline = DiffusionPipeline.from_pretrained(
     low_cpu_mem_usage=True,
     torch_dtype=torch.float32 # torch.float16
 )
+pipeline.scheduler = DPMSolverMultistepScheduler.from_config(pipeline.scheduler.config)
+# pipeline.scheduler = EulerDiscreteScheduler.from_config(pipeline.scheduler.config)
 
 # pipeline = pipeline.to("cuda")
 
