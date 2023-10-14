@@ -1,28 +1,22 @@
 import torch
 import datetime, os
 from diffusers import DiffusionPipeline, DPMSolverMultistepScheduler
-from diffusers import StableDiffusionPipeline, EulerDiscreteScheduler
+# from diffusers import StableDiffusionPipeline, EulerDiscreteScheduler
 
 # Use local model
 model_id = "./Models/meinamix_meinaV9"
 model_name = model_id.split("/")[-1]
 
 # Create pipeline obj
-pipelineAux = DiffusionPipeline.from_pretrained(
+pipeline = DiffusionPipeline.from_pretrained(
     model_id,
     custom_pipeline="lpw_stable_diffusion",
     revision='0.15.1',
     custom_revision='0.15.1',
+    low_cpu_mem_usage=True,
     torch_dtype=torch.float32 # torch.float16
 )
-# pipelineAux.scheduler = DPMSolverMultistepScheduler.from_config(pipelineAux.scheduler.config)
-pipelineAux.scheduler = EulerDiscreteScheduler.from_pretrained(
-    os.path.join(model_id, "scheduler")
-    # model_id,
-    # subfolder=os.path.join(model_id, "scheduler")
-)
 
-pipeline = pipelineAux
 # pipeline = pipeline.to("cuda")
 
 # Bypass nsfw filter
@@ -33,6 +27,7 @@ mobile = False
 portrait = True
 res = [360, 640] if mobile else [512, 768]
 res = sorted(res, reverse=True) if portrait else sorted(res)
+res = [320, 320]
 
 # Prompt engineering
 prompt = "(masterpiece, best quality, high quality, highres:1.4), ambient soft lighting, 4K, 1girl, cute, huge breasts,, close-up,long hair,pink hair,hairband,((gradient hair))"
@@ -57,6 +52,7 @@ with torch.no_grad():
 
 # Save image
 out_path = "."
+# out_path = "/sdcard/Download"
 out_name = f"{model_name}_{datetime.datetime.now().strftime('%Y_%m_%d_%H_%M_%S')}.png"
 out_file = os.path.join(out_path, out_name)
 img.save(out_file)
