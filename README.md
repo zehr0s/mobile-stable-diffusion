@@ -1,6 +1,6 @@
 # Showcase
 ## Usage
-```
+```bash
 # Login to linux distro
 proot-distro login debian --shared-tmp
 # Load python venv
@@ -57,7 +57,7 @@ Models/meinamix_meinaV9
 Download [Termux](https://termux.dev) and install it on your phone.
 
 ## Install a linux distro
-```
+```bash
 pkg install proot
 pkg install proot-debian
 pkg install proot-distro
@@ -65,18 +65,18 @@ proot-distro install debian
 ```
 
 ### Login to the linux distro
-```
+```bash
 proot-distro login debian --shared-tmp
 ```
 
 #### Install dependencies
-```
+```bash
 apt update
 apt install git git-lfs vim python3 python3-pip python3-venv
 ```
 
 #### Python venv
-```
+```bash
 python3 -m venv .venv
 source .venv/bin/activate
 pip install --upgrade diffusers transformers accelerate ftfy xformers
@@ -85,7 +85,7 @@ pip install torch
 ```
 
 ## Clone repo
-```
+```bash
 git clone https://github.com/zehr0s/mobile-stable-diffusion
 cd mobile-stable-diffusion
 ```
@@ -94,6 +94,6 @@ cd mobile-stable-diffusion
 Download the [model](https://huggingface.co/Meina/MeinaMix_V10/tree/main) and place it inside the folder `Models`.
 
 # Run the script
-```
+```bash
 python text2image_cli.py
 ```
