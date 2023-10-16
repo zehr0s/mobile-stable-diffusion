@@ -16,7 +16,7 @@ python text2image_cli.py demo
 | 32  |  ![Image](./Showcase/dpm32/meinamix_meinaV9_78583_2023_10_15_16_07_14.png) | ![Image](./Showcase/euler32/meinamix_meinaV9_78583_2023_10_15_16_47_33.png) |
 | 64  |  ![Image](./Showcase/dpm64/meinamix_meinaV9_78583_2023_10_15_16_20_03.png) | ![Image](./Showcase/euler64/meinamix_meinaV9_78583_2023_10_15_16_59_46.png) |
 
-See the prompts and other configuration [Here](./Showcase).
+See the prompts and other configuration [here](./Showcase).
 
 # Intro
 To use stable diffusion you'll need [Termux](https://termux.dev), this app allows you to use a linux distro in your mobile phone.
