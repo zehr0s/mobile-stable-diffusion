@@ -33,7 +33,8 @@ pipeline = DiffusionPipeline.from_pretrained(
     revision='0.15.1',
     custom_revision='0.15.1',
     low_cpu_mem_usage=True,
-    torch_dtype=torch.float32 # torch.float16
+    torch_dtype=torch.float32,
+    cache_dir="./.cache",
 )
 
 # Default settings
