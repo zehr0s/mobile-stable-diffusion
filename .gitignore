@@ -1,5 +1,5 @@
 Models
 Outputs
-Showcase/*.json
+*.json
 .cache
 *.swp
