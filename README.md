@@ -10,7 +10,7 @@ cd mobile-stable-diffusion
 python text2image_cli.py demo
 ```
 ## Outputs
-| Steps | DPMSolverMultistepSchedulerr  | EulerDiscreteSchedule |
+| Steps | DPMSolverMultistepScheduler  | EulerDiscreteSchedule |
 |--------|-------------------------|-------------------------|
 | 20  | ![Image](./Showcase/dpm20/meinamix_meinaV9_78583_2023_10_15_16_29_49.png) | ![Image](./Showcase/euler20/meinamix_meinaV9_78583_2023_10_15_16_37_13.png) |
 | 32  |  ![Image](./Showcase/dpm32/meinamix_meinaV9_78583_2023_10_15_16_07_14.png) | ![Image](./Showcase/euler32/meinamix_meinaV9_78583_2023_10_15_16_47_33.png) |
