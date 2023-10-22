@@ -12,7 +12,7 @@ python text2image_cli.py demo
 ## Outputs
 | Config | DPMSolverMultistepScheduler  | EulerDiscreteSchedule |
 |--------|-------------------------|-------------------------|
-| <details><summary>Click to expand</summary>{
+| <details><summary>Click to expand</summary><pre><code>{
   "modelName": "meinamix_meinaV9",
   "steps": 20,
   "prompt": "(masterpiece, best quality, high quality, highresolution:1.4), ambient soft lighting, 4K, 1girl,cute,huge breasts,close-up,long hair,pink hair,black hairband,pink eyes, well defined nose, happy, close-up,((gradient hair))",
