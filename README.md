@@ -12,9 +12,7 @@ python text2image_cli.py demo
 ## Outputs
 | Config | DPMSolverMultistepScheduler  | EulerDiscreteSchedule |
 |--------|-------------------------|-------------------------|
-| { <br>
-"modelName": "meinamix_meinaV9", <br> 
-"steps": 20,"prompt": "(masterpiece, best quality, high quality, highresolution:1.4), ambient soft lighting, 4K, 1girl,cute,huge breasts,close-up,long hair,pink hair,black hairband,pink eyes, well defined nose, happy, close-up,((gradient hair))","negativePrompt": "easynegative, badhandv4, (worst quality, low quality, normal quality), bad-artist, blurry, ugly, ((bad anatomy)),((bad hands)),((bad proportions)),((duplicate limbs)),((fused limbs)),((interlocking fingers)),((poorly drawn face)),clothes,logo,watermark,muscles:1.3,elf,elf ears,headphones,","width": 216,"height": 320,"seed": 78583
+| { <br>"modelName": "meinamix_meinaV9",<br>"steps": 20,"prompt": "(masterpiece, best quality, high quality, highresolution:1.4), ambient soft lighting, 4K, 1girl,cute,huge breasts,close-up,long hair,pink hair,black hairband,pink eyes, well defined nose, happy, close-up,((gradient hair))","negativePrompt": "easynegative, badhandv4, (worst quality, low quality, normal quality), bad-artist, blurry, ugly, ((bad anatomy)),((bad hands)),((bad proportions)),((duplicate limbs)),((fused limbs)),((interlocking fingers)),((poorly drawn face)),clothes,logo,watermark,muscles:1.3,elf,elf ears,headphones,","width": 216,"height": 320,"seed": 78583
 }</code></pre></details> | ![Image](./Showcase/dpm20/meinamix_meinaV9_78583_2023_10_15_16_29_49.png) | ![Image](./Showcase/euler20/meinamix_meinaV9_78583_2023_10_15_16_37_13.png) |
 | `<pre><code>{
   "modelName": "meinamix_meinaV9",
