@@ -1,4 +1,5 @@
 # Showcase
+The script `python text2image_cli.py <demo>` accepts an optional argument (`demo`) to run with a default configuration.
 ## Usage
 ```bash
 # Login to linux distro
@@ -10,7 +11,7 @@ cd mobile-stable-diffusion
 python text2image_cli.py demo
 ```
 ## Results
-Configuration:
+This is the default configuration setted in the script.
 ```json
 {
   "modelName": "meinamix_meinaV9",
@@ -22,7 +23,7 @@ Configuration:
   "seed": 78583
 }
 ```
-Output:
+Some outputs with different steps.
 | Steps | DPMSolverMultistepScheduler  | EulerDiscreteSchedule |
 |--------|-------------------------|-------------------------|
 | 20 | ![Image](./Showcase/dpm20/meinamix_meinaV9_78583_2023_10_15_16_29_49.png) | ![Image](./Showcase/euler20/meinamix_meinaV9_78583_2023_10_15_16_37_13.png) |
