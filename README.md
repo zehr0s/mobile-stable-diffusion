@@ -12,7 +12,7 @@ python text2image_cli.py demo
 ## Outputs
 | Config | DPMSolverMultistepScheduler  | EulerDiscreteSchedule |
 |--------|-------------------------|-------------------------|
-| `<pre><code>{
+| <details><summary>Click to expand</summary>{
   "modelName": "meinamix_meinaV9",
   "steps": 20,
   "prompt": "(masterpiece, best quality, high quality, highresolution:1.4), ambient soft lighting, 4K, 1girl,cute,huge breasts,close-up,long hair,pink hair,black hairband,pink eyes, well defined nose, happy, close-up,((gradient hair))",
@@ -20,7 +20,7 @@ python text2image_cli.py demo
   "width": 216,
   "height": 320,
   "seed": 78583
-}</code></pre>` | ![Image](./Showcase/dpm20/meinamix_meinaV9_78583_2023_10_15_16_29_49.png) | ![Image](./Showcase/euler20/meinamix_meinaV9_78583_2023_10_15_16_37_13.png) |
+}</code></pre></details> | ![Image](./Showcase/dpm20/meinamix_meinaV9_78583_2023_10_15_16_29_49.png) | ![Image](./Showcase/euler20/meinamix_meinaV9_78583_2023_10_15_16_37_13.png) |
 | `<pre><code>{
   "modelName": "meinamix_meinaV9",
   "steps": 32,
@@ -87,7 +87,7 @@ pkg install proot-debian
 pkg install proot-distro
 proot-distro install debian
 ```
-Note that the data is located at `/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/debian/root`.
+Note that the distro will be located at `/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/debian/root`.
 
 ### Login to the linux distro
 ```bash
