@@ -9,7 +9,7 @@ source .venv/bin/activate
 cd mobile-stable-diffusion
 python text2image_cli.py demo
 ```
-## Outputs
+## Results
 Configuration:
 ```json
 {
@@ -22,7 +22,7 @@ Configuration:
   "seed": 78583
 }
 ```
-
+Output:
 | Steps | DPMSolverMultistepScheduler  | EulerDiscreteSchedule |
 |--------|-------------------------|-------------------------|
 | 20 | ![Image](./Showcase/dpm20/meinamix_meinaV9_78583_2023_10_15_16_29_49.png) | ![Image](./Showcase/euler20/meinamix_meinaV9_78583_2023_10_15_16_37_13.png) |
