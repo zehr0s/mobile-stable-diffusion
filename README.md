@@ -10,8 +10,8 @@ cd mobile-stable-diffusion
 python text2image_cli.py demo
 ```
 ## Outputs
-| Config | DPMSolverMultistepScheduler  | EulerDiscreteSchedule |
-|--------|-------------------------|-------------------------|
+| Config | DPMSolverMultistepScheduler  |
+|--------|-------------------------|
 | {<br>&nbsp;&nbsp;"modelName" "meinamix_meinaV9",<br>&nbsp;&nbsp;"steps": 20,<br>&nbsp;&nbsp;"prompt": "(masterpiece, best quality, high quality, highresolution:1.4), ambient soft lighting, 4K, 1girl,cute,huge breasts,close-up,long hair,pink hair,black hairband,pink eyes, well defined nose, happy, close-up,((gradient hair))",<br>&nbsp;&nbsp;"negativePrompt": "easynegative, badhandv4, (worst quality, low quality, normal quality), bad-artist, blurry, ugly, ((bad anatomy)),((bad hands)),((bad proportions)),((duplicate limbs)),((fused limbs)),((interlocking fingers)),((poorly drawn face)),clothes,logo,watermark,muscles:1.3,elf,elf ears,headphones,",<br>&nbsp;&nbsp;"width": 216,<br>&nbsp;&nbsp;"height": 320,<br>&nbsp;&nbsp;"seed": 78583<br>} | ![Image](./Showcase/dpm20/meinamix_meinaV9_78583_2023_10_15_16_29_49.png) |
 |  |  ![Image](./Showcase/dpm32/meinamix_meinaV9_78583_2023_10_15_16_07_14.png) |
 |  |  ![Image](./Showcase/dpm64/meinamix_meinaV9_78583_2023_10_15_16_20_03.png) |
