@@ -1,6 +1,6 @@
 # Showcase
-The script `python text2image_cli.py <demo>` accepts an optional argument (`demo`) to run with a default configuration.
 ## Usage
+The script `text2image_cli.py <demo>` accepts an optional argument (`demo`) to run with a default configuration.
 ```bash
 # Login to linux distro
 proot-distro login debian --shared-tmp
